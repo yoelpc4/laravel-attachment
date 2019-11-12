@@ -1,0 +1,39 @@
+// bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// import dropzone
+@import '~dropzone/dist/dropzone.css';
+
+// custom dropzone styles
+.dropzone-container {
+    .dropzone {
+        text-align: center;
+
+        border: 2px dashed #dee2e6;
+
+        .dz-preview {
+            .dz-progress {
+                top: 70% !important;
+            }
+
+            .dz-error-message {
+                top: 150px !important;
+            }
+        }
+    }
+}
+
+.dropzone-button-container {
+    margin-top: 10px;
+
+    .hint {
+        float: left;
+        margin-bottom: 10px;
+    }
+
+    .upload {
+        display: none;
+        float: right;
+        margin-bottom: 10px;
+    }
+}

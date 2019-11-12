@@ -1,0 +1,48 @@
+{
+    "name": "yoelpc4/laravel-attachment",
+    "description": "Laravel attachment manager with dropzone.",
+    "keywords": [
+        "laravel",
+        "attachment",
+        "dropzone"
+    ],
+    "homepage": "https://github.com/yoelpc4/laravel-attachment",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yoel Peter Chandra",
+            "email": "yoelpc4@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "illuminate/contracts": "5.8.* || 6.*",
+        "illuminate/console": "5.8.* || 6.*",
+        "illuminate/database": "5.8.* || 6.*",
+        "illuminate/filesystem": "5.8.* || 6.*",
+        "illuminate/http": "5.8.* || 6.*",
+        "illuminate/routing": "5.8.* || 6.*",
+        "illuminate/support": "5.8.* || 6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yoelpc4\\LaravelAttachment\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yoelpc4\\LaravelAttachment\\Providers\\LaravelAttachmentServiceProvider"
+            ],
+            "aliases": {
+                "AttachmentManager": "Yoelpc4\\LaravelAttachment\\Facades\\AttachmentManager"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
