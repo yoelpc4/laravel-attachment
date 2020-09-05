@@ -16,6 +16,7 @@
         </button>
     </div>
 </div>
+<div class="clearfix"></div>
 
 @push('component_scripts')
     <script>
@@ -94,7 +95,7 @@
 
             window['{{ $name }}'].dropzone = new Dropzone('#{{ $name }}', {
                 url: '{{ route('attachments.store') }}',
-                addRemoveLinks: true,
+                addRemoveLinks: @json($removeable),
                 acceptedFiles: @json($extensions), // allowed file extensions with comma as delimiter
                 maxFilesize: @json($maxFileSize ?? 10), // in mb
                 maxFiles: @json($maxFiles ?? 1),
